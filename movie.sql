@@ -42,4 +42,4 @@ SELECT pelicula, anio FROM peliculas WHERE anio BETWEEN 1990 and 1999 ORDER BY p
 SELECT actor FROM reparto INNER JOIN peliculas ON reparto.pelicula_reparto = peliculas.id WHERE anio = 2001;
 
 --listar actores de la pelicula mas nueva
-SELECT actor,anio, pelicula  FROM reparto INNER JOIN peliculas ON reparto.pelicula_reparto = peliculas.id ORDER BY anio DESC, pelicula DESC LIMIT 1;
+SELECT actor FROM reparto INNER JOIN peliculas ON reparto.pelicula_reparto = peliculas.id ORDER BY anio DESC, pelicula DESC LIMIT 1;
